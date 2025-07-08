@@ -107,33 +107,6 @@
   line-height: 1.6;
 }
 
-/* === Organic Section Styling === */
-.troy-section {
-  background: var(--troy-color-surface);
-  border-radius: var(--troy-section-radius);
-  padding: var(--troy-section-padding);
-  box-shadow: var(--troy-section-shadow);
-  border: var(--troy-card-border);
-  transition: var(--troy-transition-normal);
-  position: relative;
-}
-
-.troy-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: var(--troy-gradient-secondary);
-  border-radius: var(--troy-section-radius) var(--troy-section-radius) 0 0;
-}
-
-.troy-section:hover {
-  box-shadow: var(--troy-section-shadow-hover);
-  transform: translateY(-3px);
-}
-
 
 
 /* === Accent Elements === */
