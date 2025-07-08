@@ -1,21 +1,21 @@
-/* === Troy Elegant Funnel Theme === */
+/* === Troy Modern Funnel Theme === */
 :root {
-  /* === Primary (Deep Sapphire Blue) === */
-  --troy-color-primary: #1e3a8a; /* Rich royal blue */
-  --troy-color-primary-light: #3b82f6;
-  --troy-color-primary-dark: #1e40af;
+  /* === Primary (Deep Forest Green) === */
+  --troy-color-primary: #064e3b; /* Rich forest green */
+  --troy-color-primary-light: #059669;
+  --troy-color-primary-dark: #022c22;
   --troy-color-on-primary: #ffffff;
   
-  /* === Secondary (Luxurious Gold) === */
-  --troy-color-secondary: #f59e0b; /* Sophisticated amber gold */
-  --troy-color-secondary-light: #fbbf24;
-  --troy-color-secondary-dark: #d97706;
-  --troy-color-on-secondary: #000000;
+  /* === Secondary (Warm Coral) === */
+  --troy-color-secondary: #f97316; /* Vibrant coral orange */
+  --troy-color-secondary-light: #fb923c;
+  --troy-color-secondary-dark: #ea580c;
+  --troy-color-on-secondary: #ffffff;
   
-  /* === Tertiary (Elegant Emerald) === */
-  --troy-color-tertiary: #059669;
-  --troy-color-tertiary-light: #10b981;
-  --troy-color-tertiary-dark: #047857;
+  /* === Tertiary (Rich Purple) === */
+  --troy-color-tertiary: #7c3aed;
+  --troy-color-tertiary-light: #8b5cf6;
+  --troy-color-tertiary-dark: #6d28d9;
   --troy-color-on-tertiary: #ffffff;
   
   /* === Error === */
@@ -31,99 +31,101 @@
   --troy-color-on-success: #ffffff;
   
   /* === Warning === */
-  --troy-color-warning: #ea580c;
-  --troy-color-warning-light: #f97316;
-  --troy-color-warning-dark: #c2410c;
+  --troy-color-warning: #d97706;
+  --troy-color-warning-light: #f59e0b;
+  --troy-color-warning-dark: #b45309;
   --troy-color-on-warning: #ffffff;
   
   /* === Info === */
-  --troy-color-info: #0891b2;
-  --troy-color-info-light: #06b6d4;
-  --troy-color-info-dark: #0e7490;
+  --troy-color-info: #0284c7;
+  --troy-color-info-light: #0ea5e9;
+  --troy-color-info-dark: #0369a1;
   --troy-color-on-info: #ffffff;
   
-  /* === Surface & Background (Premium Light) === */
-  --troy-color-surface: #ffffff; /* Clean white */
-  --troy-color-surface-variant: #f8fafc;
-  --troy-color-surface-container: #f1f5f9;
-  --troy-color-surface-container-high: #e2e8f0;
-  --troy-color-on-surface: #1e293b;
-  --troy-color-on-surface-variant: #475569;
+  /* === Surface & Background (Warm Neutrals) === */
+  --troy-color-surface: #fefdf8; /* Warm white */
+  --troy-color-surface-variant: #faf9f5;
+  --troy-color-surface-container: #f5f4f0;
+  --troy-color-surface-container-high: #eeede7;
+  --troy-color-on-surface: #1c1b16;
+  --troy-color-on-surface-variant: #4a4940;
   
-  --troy-color-background: #fefefe; /* Soft white */
-  --troy-color-on-background: #0f172a;
+  --troy-color-background: #fffffe; /* Pure warm white */
+  --troy-color-on-background: #0f0e0a;
   
-  /* === Accent Colors (Premium Touches) === */
-  --troy-color-accent-platinum: #e5e7eb;
-  --troy-color-accent-silver: #9ca3af;
-  --troy-color-accent-copper: #92400e;
-  --troy-color-accent-pearl: #f3f4f6;
+  /* === Accent Colors (Earth Tones) === */
+  --troy-color-accent-bronze: #92400e;
+  --troy-color-accent-sage: #84cc16;
+  --troy-color-accent-terracotta: #dc2626;
+  --troy-color-accent-cream: #fef3c7;
+  --troy-color-accent-charcoal: #374151;
   
   /* === Outline === */
-  --troy-color-outline: #cbd5e1;
-  --troy-color-outline-variant: #e2e8f0;
-  --troy-color-outline-focus: var(--troy-color-primary);
+  --troy-color-outline: #d6d3d1;
+  --troy-color-outline-variant: #e7e5e4;
+  --troy-color-outline-focus: var(--troy-color-secondary);
   
   /* === Gradient Backgrounds === */
-  --troy-gradient-primary: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
-  --troy-gradient-secondary: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%);
-  --troy-gradient-hero: linear-gradient(135deg, #1e3a8a 0%, #059669 50%, #f59e0b 100%);
-  --troy-gradient-subtle: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+  --troy-gradient-primary: linear-gradient(135deg, #064e3b 0%, #059669 100%);
+  --troy-gradient-secondary: linear-gradient(135deg, #f97316 0%, #fb923c 100%);
+  --troy-gradient-hero: linear-gradient(135deg, #064e3b 0%, #7c3aed 50%, #f97316 100%);
+  --troy-gradient-subtle: linear-gradient(135deg, #fefdf8 0%, #faf9f5 100%);
+  --troy-gradient-warm: linear-gradient(135deg, #fef3c7 0%, #fefdf8 100%);
   
   /* === Background Pattern === */
-  --troy-background-image: url('/assets/backgrounds/troy-elegant-pattern.svg');
+  --troy-background-image: url('/assets/backgrounds/troy-organic-pattern.svg');
   
   /* === Section Styling === */
-  --troy-section-radius: 0.75rem;
-  --troy-section-padding: 2rem;
-  --troy-section-shadow: 0 10px 25px -3px rgba(30, 58, 138, 0.1), 0 4px 6px -2px rgba(30, 58, 138, 0.05);
-  --troy-section-shadow-hover: 0 20px 35px -5px rgba(30, 58, 138, 0.15), 0 10px 15px -3px rgba(30, 58, 138, 0.1);
+  --troy-section-radius: 1rem;
+  --troy-section-padding: 2.5rem;
+  --troy-section-shadow: 0 12px 28px -4px rgba(6, 78, 59, 0.12), 0 4px 8px -2px rgba(6, 78, 59, 0.08);
+  --troy-section-shadow-hover: 0 20px 40px -8px rgba(6, 78, 59, 0.18), 0 8px 16px -4px rgba(6, 78, 59, 0.12);
   
   /* === Header Styling === */
-  --troy-header-size: 2.25rem;
-  --troy-header-gap: 1rem;
-  --troy-header-margin-bottom: 2rem;
-  --troy-header-weight: 600;
+  --troy-header-size: 2.125rem;
+  --troy-header-gap: 1.25rem;
+  --troy-header-margin-bottom: 2.25rem;
+  --troy-header-weight: 700;
   
-  --troy-header-center-size: 2.5rem;
-  --troy-header-center-weight: 700;
-  --troy-header-center-margin-bottom: 2.5rem;
+  --troy-header-center-size: 2.75rem;
+  --troy-header-center-weight: 800;
+  --troy-header-center-margin-bottom: 3rem;
   
   /* === Button Styling === */
-  --troy-button-radius: 0.5rem;
-  --troy-button-padding: 0.75rem 2rem;
-  --troy-button-shadow: 0 4px 14px 0 rgba(30, 58, 138, 0.25);
-  --troy-button-shadow-hover: 0 6px 20px 0 rgba(30, 58, 138, 0.35);
+  --troy-button-radius: 0.75rem;
+  --troy-button-padding: 1rem 2.5rem;
+  --troy-button-shadow: 0 6px 18px 0 rgba(249, 115, 22, 0.28);
+  --troy-button-shadow-hover: 0 10px 25px 0 rgba(249, 115, 22, 0.4);
   
   /* === Card Styling === */
-  --troy-card-radius: 1rem;
-  --troy-card-padding: 1.5rem;
-  --troy-card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --troy-card-radius: 1.25rem;
+  --troy-card-padding: 2rem;
+  --troy-card-shadow: 0 6px 12px -2px rgba(0, 0, 0, 0.08), 0 3px 6px -1px rgba(0, 0, 0, 0.06);
   --troy-card-border: 1px solid var(--troy-color-outline-variant);
   
   /* === Typography === */
-  --troy-font-primary: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
-  --troy-font-headings: 'Playfair Display', 'Georgia', serif;
-  --troy-font-accent: 'Montserrat', 'Helvetica Neue', sans-serif;
+  --troy-font-primary: 'Poppins', 'Inter', system-ui, -apple-system, sans-serif;
+  --troy-font-headings: 'Merriweather', 'Playfair Display', serif;
+  --troy-font-accent: 'Nunito Sans', 'Montserrat', sans-serif;
   
   /* === Spacing Scale === */
-  --troy-space-xs: 0.25rem;
-  --troy-space-sm: 0.5rem;
-  --troy-space-md: 1rem;
-  --troy-space-lg: 1.5rem;
-  --troy-space-xl: 2rem;
-  --troy-space-2xl: 3rem;
-  --troy-space-3xl: 4rem;
+  --troy-space-xs: 0.375rem;
+  --troy-space-sm: 0.75rem;
+  --troy-space-md: 1.25rem;
+  --troy-space-lg: 2rem;
+  --troy-space-xl: 2.75rem;
+  --troy-space-2xl: 3.5rem;
+  --troy-space-3xl: 4.5rem;
   
   /* === Animation & Transitions === */
-  --troy-transition-fast: 150ms ease-in-out;
-  --troy-transition-normal: 250ms ease-in-out;
-  --troy-transition-slow: 350ms ease-in-out;
+  --troy-transition-fast: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  --troy-transition-normal: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  --troy-transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
   
   /* === Interactive States === */
-  --troy-hover-opacity: 0.9;
-  --troy-active-scale: 0.98;
-  --troy-focus-ring: 0 0 0 3px rgba(30, 58, 138, 0.1);
+  --troy-hover-opacity: 0.92;
+  --troy-active-scale: 0.96;
+  --troy-focus-ring: 0 0 0 4px rgba(249, 115, 22, 0.15);
 }
 
 /* === Troy Theme Main Color Classes === */
@@ -131,9 +133,10 @@
   background: var(--troy-color-background);
   color: var(--troy-color-on-background);
   font-family: var(--troy-font-primary);
+  line-height: 1.6;
 }
 
-/* === Premium Section Styling === */
+/* === Organic Section Styling === */
 .troy-section {
   background: var(--troy-color-surface);
   border-radius: var(--troy-section-radius);
@@ -141,31 +144,60 @@
   box-shadow: var(--troy-section-shadow);
   border: var(--troy-card-border);
   transition: var(--troy-transition-normal);
+  position: relative;
+}
+
+.troy-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--troy-gradient-secondary);
+  border-radius: var(--troy-section-radius) var(--troy-section-radius) 0 0;
 }
 
 .troy-section:hover {
   box-shadow: var(--troy-section-shadow-hover);
-  transform: translateY(-2px);
+  transform: translateY(-3px);
 }
 
-/* === Elegant Button Styling === */
+/* === Dynamic Button Styling === */
 .troy-button-primary {
   background: var(--troy-gradient-primary);
   color: var(--troy-color-on-primary);
   border: none;
   border-radius: var(--troy-button-radius);
   padding: var(--troy-button-padding);
-  font-weight: 600;
+  font-weight: 700;
   font-family: var(--troy-font-accent);
+  font-size: 1.1rem;
   box-shadow: var(--troy-button-shadow);
   transition: var(--troy-transition-normal);
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.troy-button-primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: var(--troy-transition-slow);
+}
+
+.troy-button-primary:hover::before {
+  left: 100%;
 }
 
 .troy-button-primary:hover {
   box-shadow: var(--troy-button-shadow-hover);
-  transform: translateY(-1px);
-  opacity: var(--troy-hover-opacity);
+  transform: translateY(-2px) scale(1.02);
 }
 
 .troy-button-secondary {
@@ -174,42 +206,50 @@
   border: none;
   border-radius: var(--troy-button-radius);
   padding: var(--troy-button-padding);
-  font-weight: 600;
+  font-weight: 700;
   font-family: var(--troy-font-accent);
+  font-size: 1.1rem;
   box-shadow: var(--troy-button-shadow);
   transition: var(--troy-transition-normal);
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
 }
 
-/* === Scroll to Top Button === */
+/* === Enhanced Scroll to Top Button === */
 .troy-scrollToTopBtn {
-  background: var(--troy-gradient-primary);
-  color: var(--troy-color-on-primary);
+  background: var(--troy-gradient-secondary);
+  color: var(--troy-color-on-secondary);
   border: none;
   border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
+  width: 3.5rem;
+  height: 3.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: var(--troy-button-shadow);
   transition: var(--troy-transition-normal);
   cursor: pointer;
+  position: relative;
 }
 
 .troy-scrollToTopBtn:hover {
   box-shadow: var(--troy-button-shadow-hover);
-  transform: translateY(-2px) scale(1.05);
+  transform: translateY(-3px) scale(1.08);
 }
 
-/* === Typography Classes === */
+/* === Rich Typography Classes === */
 .troy-heading-primary {
   font-family: var(--troy-font-headings);
   font-size: var(--troy-header-center-size);
   font-weight: var(--troy-header-center-weight);
   margin-bottom: var(--troy-header-center-margin-bottom);
-  color: var(--troy-color-primary);
+  background: var(--troy-gradient-hero);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-align: center;
+  line-height: 1.2;
 }
 
 .troy-heading-secondary {
@@ -217,10 +257,11 @@
   font-size: var(--troy-header-size);
   font-weight: var(--troy-header-weight);
   margin-bottom: var(--troy-header-margin-bottom);
-  color: var(--troy-color-on-surface);
+  color: var(--troy-color-primary);
+  line-height: 1.3;
 }
 
-/* === Card Components === */
+/* === Premium Card Components === */
 .troy-card {
   background: var(--troy-color-surface);
   border-radius: var(--troy-card-radius);
@@ -228,19 +269,63 @@
   box-shadow: var(--troy-card-shadow);
   border: var(--troy-card-border);
   transition: var(--troy-transition-normal);
+  position: relative;
+  overflow: hidden;
+}
+
+.troy-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--troy-gradient-primary);
 }
 
 .troy-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px);
   box-shadow: var(--troy-section-shadow-hover);
 }
 
+/* === Accent Elements === */
+.troy-accent-bronze {
+  color: var(--troy-color-accent-bronze);
+}
+
+.troy-accent-sage {
+  color: var(--troy-color-accent-sage);
+}
+
+.troy-accent-terracotta {
+  color: var(--troy-color-accent-terracotta);
+}
+
 /* === Responsive Design === */
+@media (max-width: 1024px) {
+  :root {
+    --troy-section-padding: 2rem;
+    --troy-header-center-size: 2.25rem;
+    --troy-header-size: 1.875rem;
+  }
+}
+
 @media (max-width: 768px) {
   :root {
     --troy-section-padding: 1.5rem;
     --troy-header-center-size: 2rem;
-    --troy-header-size: 1.75rem;
-    --troy-button-padding: 0.625rem 1.5rem;
+    --troy-header-size: 1.625rem;
+    --troy-button-padding: 0.875rem 2rem;
+    --troy-card-padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --troy-section-padding: 1.25rem;
+    --troy-header-center-size: 1.75rem;
+    --troy-header-size: 1.5rem;
+    --troy-button-padding: 0.75rem 1.5rem;
+    --troy-card-padding: 1.25rem;
   }
 }
