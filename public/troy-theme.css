@@ -1,78 +1,246 @@
-/* === Troy Cardinal & Gold Dark Theme === */
+/* === Troy Elegant Funnel Theme === */
 :root {
-  /* === Primary (Cardinal Red) === */
-  --troy-color-primary: #8b0000; /* Deep cardinal red */
-  --troy-color-primary-light: #a52a2a;
-  --troy-color-primary-dark: #660000;
+  /* === Primary (Deep Sapphire Blue) === */
+  --troy-color-primary: #1e3a8a; /* Rich royal blue */
+  --troy-color-primary-light: #3b82f6;
+  --troy-color-primary-dark: #1e40af;
   --troy-color-on-primary: #ffffff;
   
-  /* === Secondary (Troy Gold) === */
-  --troy-color-secondary: #ffd700; /* Bright gold */
-  --troy-color-secondary-light: #ffdf33;
-  --troy-color-secondary-dark: #ccac00;
+  /* === Secondary (Luxurious Gold) === */
+  --troy-color-secondary: #f59e0b; /* Sophisticated amber gold */
+  --troy-color-secondary-light: #fbbf24;
+  --troy-color-secondary-dark: #d97706;
   --troy-color-on-secondary: #000000;
   
-  /* === Tertiary (Dark Gold) === */
-  --troy-color-tertiary: #b8860b;
-  --troy-color-tertiary-light: #daa520;
-  --troy-color-tertiary-dark: #996f00;
+  /* === Tertiary (Elegant Emerald) === */
+  --troy-color-tertiary: #059669;
+  --troy-color-tertiary-light: #10b981;
+  --troy-color-tertiary-dark: #047857;
   --troy-color-on-tertiary: #ffffff;
   
   /* === Error === */
-  --troy-color-error: #dc143c;
-  --troy-color-error-light: #e94560;
-  --troy-color-error-dark: #b91c3c;
+  --troy-color-error: #dc2626;
+  --troy-color-error-light: #ef4444;
+  --troy-color-error-dark: #b91c1c;
   --troy-color-on-error: #ffffff;
   
   /* === Success === */
-  --troy-color-success: #228b22;
-  --troy-color-success-light: #32cd32;
-  --troy-color-success-dark: #006400;
+  --troy-color-success: #16a34a;
+  --troy-color-success-light: #22c55e;
+  --troy-color-success-dark: #15803d;
   --troy-color-on-success: #ffffff;
   
   /* === Warning === */
-  --troy-color-warning: #ff8c00;
-  --troy-color-warning-light: #ffa500;
-  --troy-color-warning-dark: #cc7000;
-  --troy-color-on-warning: #000000;
+  --troy-color-warning: #ea580c;
+  --troy-color-warning-light: #f97316;
+  --troy-color-warning-dark: #c2410c;
+  --troy-color-on-warning: #ffffff;
   
   /* === Info === */
-  --troy-color-info: #4682b4;
-  --troy-color-info-light: #5f9ea0;
-  --troy-color-info-dark: #2f4f4f;
+  --troy-color-info: #0891b2;
+  --troy-color-info-light: #06b6d4;
+  --troy-color-info-dark: #0e7490;
   --troy-color-on-info: #ffffff;
   
-  /* === Surface & Background === */
-  --troy-color-surface: #1a1a1a; /* dark charcoal */
-  --troy-color-surface-variant: #2d2d2d;
-  --troy-color-surface-container: #3a3a3a;
-  --troy-color-surface-container-high: #474747;
-  --troy-color-on-surface: #ffffff;
-  --troy-color-on-surface-variant: #e0e0e0;
+  /* === Surface & Background (Premium Light) === */
+  --troy-color-surface: #ffffff; /* Clean white */
+  --troy-color-surface-variant: #f8fafc;
+  --troy-color-surface-container: #f1f5f9;
+  --troy-color-surface-container-high: #e2e8f0;
+  --troy-color-on-surface: #1e293b;
+  --troy-color-on-surface-variant: #475569;
   
-  --troy-color-background: #0d0d0d; /* deep black */
-  --troy-color-on-background: #ffffff;
+  --troy-color-background: #fefefe; /* Soft white */
+  --troy-color-on-background: #0f172a;
+  
+  /* === Accent Colors (Premium Touches) === */
+  --troy-color-accent-platinum: #e5e7eb;
+  --troy-color-accent-silver: #9ca3af;
+  --troy-color-accent-copper: #92400e;
+  --troy-color-accent-pearl: #f3f4f6;
   
   /* === Outline === */
-  --troy-color-outline: #666666;
-  --troy-color-outline-variant: #4d4d4d;
+  --troy-color-outline: #cbd5e1;
+  --troy-color-outline-variant: #e2e8f0;
   --troy-color-outline-focus: var(--troy-color-primary);
   
+  /* === Gradient Backgrounds === */
+  --troy-gradient-primary: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  --troy-gradient-secondary: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%);
+  --troy-gradient-hero: linear-gradient(135deg, #1e3a8a 0%, #059669 50%, #f59e0b 100%);
+  --troy-gradient-subtle: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+  
   /* === Background Pattern === */
-  --troy-background-image: url('/assets/backgrounds/troy-pattern.svg');
+  --troy-background-image: url('/assets/backgrounds/troy-elegant-pattern.svg');
   
   /* === Section Styling === */
-  --troy-section-radius: 1rem;
-  --troy-section-padding: 1.25rem;
-  --troy-section-shadow: 0 25px 50px -12px rgba(139, 0, 0, 0.3);
+  --troy-section-radius: 0.75rem;
+  --troy-section-padding: 2rem;
+  --troy-section-shadow: 0 10px 25px -3px rgba(30, 58, 138, 0.1), 0 4px 6px -2px rgba(30, 58, 138, 0.05);
+  --troy-section-shadow-hover: 0 20px 35px -5px rgba(30, 58, 138, 0.15), 0 10px 15px -3px rgba(30, 58, 138, 0.1);
   
   /* === Header Styling === */
-  --troy-header-size: 1.875rem;
-  --troy-header-gap: 0.75rem;
-  --troy-header-margin-bottom: 1.5rem;
-  --troy-header-weight: 500;
+  --troy-header-size: 2.25rem;
+  --troy-header-gap: 1rem;
+  --troy-header-margin-bottom: 2rem;
+  --troy-header-weight: 600;
   
-  --troy-header-center-size: 1.875rem;
+  --troy-header-center-size: 2.5rem;
   --troy-header-center-weight: 700;
-  --troy-header-center-margin-bottom: 1.75rem;
+  --troy-header-center-margin-bottom: 2.5rem;
+  
+  /* === Button Styling === */
+  --troy-button-radius: 0.5rem;
+  --troy-button-padding: 0.75rem 2rem;
+  --troy-button-shadow: 0 4px 14px 0 rgba(30, 58, 138, 0.25);
+  --troy-button-shadow-hover: 0 6px 20px 0 rgba(30, 58, 138, 0.35);
+  
+  /* === Card Styling === */
+  --troy-card-radius: 1rem;
+  --troy-card-padding: 1.5rem;
+  --troy-card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --troy-card-border: 1px solid var(--troy-color-outline-variant);
+  
+  /* === Typography === */
+  --troy-font-primary: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --troy-font-headings: 'Playfair Display', 'Georgia', serif;
+  --troy-font-accent: 'Montserrat', 'Helvetica Neue', sans-serif;
+  
+  /* === Spacing Scale === */
+  --troy-space-xs: 0.25rem;
+  --troy-space-sm: 0.5rem;
+  --troy-space-md: 1rem;
+  --troy-space-lg: 1.5rem;
+  --troy-space-xl: 2rem;
+  --troy-space-2xl: 3rem;
+  --troy-space-3xl: 4rem;
+  
+  /* === Animation & Transitions === */
+  --troy-transition-fast: 150ms ease-in-out;
+  --troy-transition-normal: 250ms ease-in-out;
+  --troy-transition-slow: 350ms ease-in-out;
+  
+  /* === Interactive States === */
+  --troy-hover-opacity: 0.9;
+  --troy-active-scale: 0.98;
+  --troy-focus-ring: 0 0 0 3px rgba(30, 58, 138, 0.1);
+}
+
+/* === Troy Theme Main Color Classes === */
+.troy-main-color {
+  background: var(--troy-color-background);
+  color: var(--troy-color-on-background);
+  font-family: var(--troy-font-primary);
+}
+
+/* === Premium Section Styling === */
+.troy-section {
+  background: var(--troy-color-surface);
+  border-radius: var(--troy-section-radius);
+  padding: var(--troy-section-padding);
+  box-shadow: var(--troy-section-shadow);
+  border: var(--troy-card-border);
+  transition: var(--troy-transition-normal);
+}
+
+.troy-section:hover {
+  box-shadow: var(--troy-section-shadow-hover);
+  transform: translateY(-2px);
+}
+
+/* === Elegant Button Styling === */
+.troy-button-primary {
+  background: var(--troy-gradient-primary);
+  color: var(--troy-color-on-primary);
+  border: none;
+  border-radius: var(--troy-button-radius);
+  padding: var(--troy-button-padding);
+  font-weight: 600;
+  font-family: var(--troy-font-accent);
+  box-shadow: var(--troy-button-shadow);
+  transition: var(--troy-transition-normal);
+  cursor: pointer;
+}
+
+.troy-button-primary:hover {
+  box-shadow: var(--troy-button-shadow-hover);
+  transform: translateY(-1px);
+  opacity: var(--troy-hover-opacity);
+}
+
+.troy-button-secondary {
+  background: var(--troy-gradient-secondary);
+  color: var(--troy-color-on-secondary);
+  border: none;
+  border-radius: var(--troy-button-radius);
+  padding: var(--troy-button-padding);
+  font-weight: 600;
+  font-family: var(--troy-font-accent);
+  box-shadow: var(--troy-button-shadow);
+  transition: var(--troy-transition-normal);
+  cursor: pointer;
+}
+
+/* === Scroll to Top Button === */
+.troy-scrollToTopBtn {
+  background: var(--troy-gradient-primary);
+  color: var(--troy-color-on-primary);
+  border: none;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--troy-button-shadow);
+  transition: var(--troy-transition-normal);
+  cursor: pointer;
+}
+
+.troy-scrollToTopBtn:hover {
+  box-shadow: var(--troy-button-shadow-hover);
+  transform: translateY(-2px) scale(1.05);
+}
+
+/* === Typography Classes === */
+.troy-heading-primary {
+  font-family: var(--troy-font-headings);
+  font-size: var(--troy-header-center-size);
+  font-weight: var(--troy-header-center-weight);
+  margin-bottom: var(--troy-header-center-margin-bottom);
+  color: var(--troy-color-primary);
+  text-align: center;
+}
+
+.troy-heading-secondary {
+  font-family: var(--troy-font-headings);
+  font-size: var(--troy-header-size);
+  font-weight: var(--troy-header-weight);
+  margin-bottom: var(--troy-header-margin-bottom);
+  color: var(--troy-color-on-surface);
+}
+
+/* === Card Components === */
+.troy-card {
+  background: var(--troy-color-surface);
+  border-radius: var(--troy-card-radius);
+  padding: var(--troy-card-padding);
+  box-shadow: var(--troy-card-shadow);
+  border: var(--troy-card-border);
+  transition: var(--troy-transition-normal);
+}
+
+.troy-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--troy-section-shadow-hover);
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+  :root {
+    --troy-section-padding: 1.5rem;
+    --troy-header-center-size: 2rem;
+    --troy-header-size: 1.75rem;
+    --troy-button-padding: 0.625rem 1.5rem;
+  }
 }
