@@ -72,14 +72,21 @@
   --troy-gradient-subtle: linear-gradient(135deg, #fefdf8 0%, #faf9f5 100%);
   --troy-gradient-warm: linear-gradient(135deg, #fef3c7 0%, #fefdf8 100%);
   
-  /* === Background Pattern === */
-  --troy-background-image: url('/assets/backgrounds/troy-organic-pattern.svg');
+      /* Section Variables */
+    --troy-section-radius: 1.25rem;       /* Tailwind: rounded-3xl - slightly more rounded for ancient aesthetic */
+    --troy-section-padding: 1.5rem;       /* Tailwind: p-6 - more generous padding */
+    --troy-section-shadow: 0 25px 50px -12px rgba(67, 20, 7, 0.2); /* Warm bronze themed shadow */
+    
+    /* Header Section Variables */
+    --troy-header-size: 2rem;              /* Tailwind: text-4xl - larger for ancient grandeur */
+    --troy-header-gap: 0.875rem;
+    --troy-header-margin-bottom: 1.75rem;
+    --troy-header-weight: 600;             /* Bolder for ancient authority */
   
-  /* === Section Styling === */
-  --troy-section-radius: 1rem;
-  --troy-section-padding: 2.5rem;
-  --troy-section-shadow: 0 12px 28px -4px rgba(6, 78, 59, 0.12), 0 4px 8px -2px rgba(6, 78, 59, 0.08);
-  --troy-section-shadow-hover: 0 20px 40px -8px rgba(6, 78, 59, 0.18), 0 8px 16px -4px rgba(6, 78, 59, 0.12);
+    /* Header Section Center variables */
+    --troy-header-center-size: 2.25rem;    /* Tailwind: text-4xl - even larger for center headers */
+    --troy-header-center-weight: 800;      /* Very bold for central importance */
+    --troy-header-center-margin-bottom: 2rem; /* More space for dramatic effect */
   
 
   
