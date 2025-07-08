@@ -1,0 +1,78 @@
+/* === Troy Cardinal & Gold Dark Theme === */
+:root {
+  /* === Primary (Cardinal Red) === */
+  --troy-color-primary: #8b0000; /* Deep cardinal red */
+  --troy-color-primary-light: #a52a2a;
+  --troy-color-primary-dark: #660000;
+  --troy-color-on-primary: #ffffff;
+  
+  /* === Secondary (Troy Gold) === */
+  --troy-color-secondary: #ffd700; /* Bright gold */
+  --troy-color-secondary-light: #ffdf33;
+  --troy-color-secondary-dark: #ccac00;
+  --troy-color-on-secondary: #000000;
+  
+  /* === Tertiary (Dark Gold) === */
+  --troy-color-tertiary: #b8860b;
+  --troy-color-tertiary-light: #daa520;
+  --troy-color-tertiary-dark: #996f00;
+  --troy-color-on-tertiary: #ffffff;
+  
+  /* === Error === */
+  --troy-color-error: #dc143c;
+  --troy-color-error-light: #e94560;
+  --troy-color-error-dark: #b91c3c;
+  --troy-color-on-error: #ffffff;
+  
+  /* === Success === */
+  --troy-color-success: #228b22;
+  --troy-color-success-light: #32cd32;
+  --troy-color-success-dark: #006400;
+  --troy-color-on-success: #ffffff;
+  
+  /* === Warning === */
+  --troy-color-warning: #ff8c00;
+  --troy-color-warning-light: #ffa500;
+  --troy-color-warning-dark: #cc7000;
+  --troy-color-on-warning: #000000;
+  
+  /* === Info === */
+  --troy-color-info: #4682b4;
+  --troy-color-info-light: #5f9ea0;
+  --troy-color-info-dark: #2f4f4f;
+  --troy-color-on-info: #ffffff;
+  
+  /* === Surface & Background === */
+  --troy-color-surface: #1a1a1a; /* dark charcoal */
+  --troy-color-surface-variant: #2d2d2d;
+  --troy-color-surface-container: #3a3a3a;
+  --troy-color-surface-container-high: #474747;
+  --troy-color-on-surface: #ffffff;
+  --troy-color-on-surface-variant: #e0e0e0;
+  
+  --troy-color-background: #0d0d0d; /* deep black */
+  --troy-color-on-background: #ffffff;
+  
+  /* === Outline === */
+  --troy-color-outline: #666666;
+  --troy-color-outline-variant: #4d4d4d;
+  --troy-color-outline-focus: var(--troy-color-primary);
+  
+  /* === Background Pattern === */
+  --troy-background-image: url('/assets/backgrounds/troy-pattern.svg');
+  
+  /* === Section Styling === */
+  --troy-section-radius: 1rem;
+  --troy-section-padding: 1.25rem;
+  --troy-section-shadow: 0 25px 50px -12px rgba(139, 0, 0, 0.3);
+  
+  /* === Header Styling === */
+  --troy-header-size: 1.875rem;
+  --troy-header-gap: 0.75rem;
+  --troy-header-margin-bottom: 1.5rem;
+  --troy-header-weight: 500;
+  
+  --troy-header-center-size: 1.875rem;
+  --troy-header-center-weight: 700;
+  --troy-header-center-margin-bottom: 1.75rem;
+}
